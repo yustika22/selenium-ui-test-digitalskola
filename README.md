@@ -1,1 +1,1 @@
-# selenium-ui-test-digitalskola
+# selenium-ui-test-digitalskola by Yustika Dyah Shafira

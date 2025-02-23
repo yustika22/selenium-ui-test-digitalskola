@@ -2,10 +2,10 @@
   "name": "web-ui-fundamental",
   "version": "1.0.0",
   "description": "",
-  "type" : "module",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx mocha tests/saucedemotest.js -t 0"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +13,7 @@
   "dependencies": {
     "chai": "^5.2.0",
     "chromedriver": "^133.0.1",
+    "mocha": "^11.1.0",
     "selenium-webdriver": "^4.28.1"
   }
 }

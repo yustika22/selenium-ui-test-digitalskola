@@ -23,9 +23,9 @@ export default class halamanLogin {
     return await this.driver.findElement(this.errorMessage).getText();
   }
 
-  async verifyLoginFailed(expectedText) {
+  async verifyLoginFailed(expectedText, message) {
     const errorMessage = await this.getErrorMessage();
-    expect(errorMessage.includes(expectedText)).to.equal(true);
+    expect(errorMessage).to.includes("Username and password do not match");
   }
 }
 // module.exports = halamanLogin;

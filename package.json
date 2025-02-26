@@ -5,12 +5,18 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "npx mocha tests/saucedemotest.js -t 0"
+    "test-login": "npx mocha tests/login-test.js -t 0",
+    "test-inventory" : "npx mocha tests/inventory-test.js -t 0",
+    "test-cart" : "npx mocha tests/cart-test.js -t 0",
+    "test-checkout-stepone" : "npx mocha tests/checkout-stepone-test.js -t 0",
+    "test-checkout-steptwo" : "npx mocha tests/checkout-steptwo-test.js -t 0",
+    "test-stepfinish" : "npx mocha tests/checkout-stepfinish-test.js -t 0"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "canvas": "^3.1.0",
     "chai": "^5.2.0",
     "chromedriver": "^133.0.1",
     "mocha": "^11.1.0",

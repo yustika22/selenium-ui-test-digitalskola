@@ -1,13 +1,17 @@
 import fs from "fs";
 import path from "path";
 import resemble from "resemblejs";
+import { fileURLToPath } from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const screenShoot = path.join(__dirname, "../screenshots");
 if (!fs.existsSync(screenShoot)) {
   fs.mkdirSync(screenShoot);
 }
 
-export const compireScreenShoot = (testCaseName) => {
+export const compareScreenShoot = (testCaseName) => {
   const baselineImage = path.join(screenShoot, `${testCaseName}_baseline.png`);
   const newImage = path.join(screenShoot, `${testCaseName}_new.png`);
   const diffImage = path.join(screenShoot, `${testCaseName}_diff.png`);

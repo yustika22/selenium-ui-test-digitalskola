@@ -1,7 +1,7 @@
 import { By } from "selenium-webdriver";
 import { expect } from "chai";
 
-export default class halamanLogin {
+export default class HalamanLogin {
   constructor(driver) {
     this.driver = driver;
     this.inputUsername = By.id("user-name");
@@ -23,9 +23,5 @@ export default class halamanLogin {
     return await this.driver.findElement(this.errorMessage).getText();
   }
 
-  async verifyLoginFailed(expectedText, message) {
-    const errorMessage = await this.getErrorMessage();
-    expect(errorMessage).to.includes("Username and password do not match");
-  }
 }
 // module.exports = halamanLogin;

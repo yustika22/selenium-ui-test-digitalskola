@@ -5,12 +5,12 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test-login": "npx mocha tests/login-test.js -t 0",
-    "test-inventory" : "npx mocha tests/inventory-test.js -t 0",
-    "test-cart" : "npx mocha tests/cart-test.js -t 0",
-    "test-checkout-stepone" : "npx mocha tests/checkout-stepone-test.js -t 0",
-    "test-checkout-steptwo" : "npx mocha tests/checkout-steptwo-test.js -t 0",
-    "test-stepfinish" : "npx mocha tests/checkout-stepfinish-test.js -t 0"
+    "test-login": "npx mocha test/login-test.js -t 0",
+    "test-inventory" : "npx mocha test/inventory-test.js -t 0",
+    "test-cart" : "npx mocha test/cart-test.js -t 0",
+    "test-checkout-stepone" : "npx mocha test/checkout-stepone-test.js -t 0",
+    "test-checkout-steptwo" : "npx mocha test/checkout-steptwo-test.js -t 0",
+    "test-stepfinish" : "npx mocha test/checkout-stepfinish-test.js -t 0"
   },
   "keywords": [],
   "author": "",
